@@ -1,0 +1,8 @@
+{
+  "cars" : [
+    {"make" : "Ford", "model" : "Mustang", "year" : 2012, "hp" : 652, "color" : "red", "img" : "img/mustang.jpg"},
+    {"make" : "Dodge", "model" : "Charger", "year" : 2015, "hp" : 520, "color" : "black"},
+    {"make" : "Chevy", "model" : "Camaro", "year" : 2016, "hp" : 350, "color" : "yellow"},
+    {"make" : "Acura", "model" : "NSX", "year" : 2001, "hp" : 605, "color" : "blue"}
+  ]
+}

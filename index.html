@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Handlebars - Pulling in data from json</title>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+
+
+    <!-- Data grabbed using $ JSON -->
+    <div id="ageData"></div>
+    <script id="template" type="text/x-handlebars-template">
+      {{!-- the occupationData template --}}
+      <h3>Member Age Data</h3>
+
+      {{#each members}}
+        My name is {{member}}, and I am a {{age}}. <br/>
+      {{/each}}
+    </script>
+
+
+
+
+
+
+
+
+    <!-- Data grabbed using $ ajax -->
+    <div id="carData"></div>
+    <script id="cars-template" type="text/x-handlebars-template">
+      {{!-- the carData template --}}
+      <h3>Car Data</h3>
+
+      {{#each cars}}
+      <h3>{{make}}</h3>
+        Model: {{model}}<br/>
+        Year: {{year}}<br/>
+        Horse Power: {{hp}}<br/>
+        Color: {{color}}<br/>
+        <hr/>
+      {{/each}}
+    </script>
+
+
+
+
+  </body>
+</html>
